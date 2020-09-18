@@ -1,11 +1,5 @@
 package exercicios.ex3
 
-class Aluno(private val nome: String, private val id: Int) {
-    override fun equals(other: Any?): Boolean {
-        return other is Aluno &&  id == other.id
-    }
-}
-
 fun main() {
     val a1 = Aluno(nome = "Rodrigo", id = 123)
     val a2 = Aluno(nome = "Freitas", id = 321)
